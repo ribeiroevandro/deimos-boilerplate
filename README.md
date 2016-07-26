@@ -67,6 +67,13 @@ With the commands above, you have everything to start.
     │   ├── trumps/*.styl
     │   └── style.styl
     └── pug
+        └── layouts
+        │   ├── inc
+        │   │   ├── head.pug
+        │   │   ├── header.pug
+        │   │   ├── footer.pug
+        │   │   └── scripts.pug
+        │   └── default.pug
         └── index.pug
 ```
 

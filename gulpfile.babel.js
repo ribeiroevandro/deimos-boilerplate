@@ -101,7 +101,9 @@ gulp.task('html', () => {
   gulp.src(srcPaths.html)
     .pipe(plumber())
     .pipe(data(dataJson))
-    .pipe(pug())
+    .pipe(pug({
+      pretty: false
+    }))
     .on('error', onError)
     .pipe(gulp.dest(buildPaths.html));
 });
