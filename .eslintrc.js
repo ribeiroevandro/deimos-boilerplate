@@ -3,9 +3,9 @@ module.exports = {
     "browser": true,
     "es6": true,
     "jquery": true
-  }, 
-  "globals": { 
-  }, 
+  },
+  "globals": {
+  },
   "extends": "eslint:recommended",
   "parserOptions": {
     "sourceType": "module"
@@ -22,5 +22,8 @@ module.exports = {
       "error",
       "always"
     ]
+  },
+  "env": {
+    "node": true
   }
-}; 
+};

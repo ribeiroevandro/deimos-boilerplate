@@ -48,23 +48,22 @@ With the commands above, you have everything to start.
 │   │   ├── svg/
 │   │   └── js
 │   │       └── main.js
+│   ├── styleguide
 │   ├── index.html
-├── gulpfile.babel.js
+├── gulpfile.js
 ├── package.json
 └── src
+    ├── data/
+    ├── helpers/
     ├── img/
-    ├── svg/
     ├── js/
     │   └── main.js
     ├── styl
-    │   ├── settings/*.styl
-    │   ├── tools/*.styl
-    │   ├── generic/*.styl
-    │   ├── base/*.styl
-    │   ├── objects/*.styl
-    │   ├── components/*.styl
-    │   ├── theme/*.styl
-    │   ├── trumps/*.styl
+    │   ├── _core/*.styl
+    │   ├── blocks/*.styl
+    │   ├── elements/*.styl
+    │   ├── imports/*.styl
+    │   ├── templates/*.styl
     │   └── style.styl
     └── pug
         └── layouts
@@ -105,8 +104,12 @@ To view a reporter of CSS files, use a `npm run reporter` command.
 - `gulp browser-sync`: inicialize a server
 - `gulp watch`: call for watch files
 - `gulp build`: run all tasks
-- `gulp pages`: deploy files to gh-pages
-- `gulp deploy`: run all tasks and deploy files to gh-pages
+- `gulp surge`: deploy for surge.sh CDN
+
+### Surge
+
+For configure the surge.sh in `gulpfile.js` change the line `domain: 'example.surge.sh'` for your domain.
+
 
 
 ## Credits
