@@ -45,7 +45,7 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
-    "eslint": "^4.8.0",
+    "eslint": "^4.18.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-cheerio": "^0.6.2",
